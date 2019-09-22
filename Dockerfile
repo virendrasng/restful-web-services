@@ -8,7 +8,7 @@ ADD /src src
 
 ADD /pom.xml pom.xml
 
-RUN mvn clean install
+RUN mvn clean install -Dmaven.test.skip=true
 
 ADD /target/restful-web-services.jar restful-web-services.jar
 
