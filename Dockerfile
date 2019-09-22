@@ -8,7 +8,7 @@ ADD /src src
 
 ADD /pom.xml pom.xml
 
-RUN mvn package
+RUN mvn clean install
 
 ADD /target/restful-web-services.jar restful-web-services.jar
 
